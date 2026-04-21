@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zero Cost Local RAG PDF System</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Main Container -->
+    <div class="container">
+        <!-- Header -->
+        <header class="header">
+            <h1>RAG PDF System</h1>
+            <p class="subtitle">Local • Zero Cost • CPU Only</p>
+        </header>
+
+        <!-- Chat Area -->
+        <div class="chat-container" id="chatContainer">
+            <!-- Welcome Message -->
+            <div class="message ai-message">
+                <div class="message-content">
+                    <p><strong>Hello! I'm ready to answer questions about your documents.</strong></p>
+                    <p>Ask me anything, and I'll provide clear answers based on the PDFs in your knowledge base. I'll cite sources when relevant.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Input Area -->
+        <div class="input-container">
+            <div class="input-wrapper">
+                <textarea 
+                    id="questionInput" 
+                    placeholder="Ask a question about your PDFs..."
+                    rows="1"
+                ></textarea>
+                <button id="sendButton" class="send-button">
+                    <span id="buttonText">Send</span>
+                </button>
+            </div>
+            <div class="input-hint">Press Enter to send • Shift+Enter for new line</div>
+        </div>
+    </div>
+
+    <!-- Loading Indicator (Hidden by default) -->
+    <div class="loading-overlay" id="loadingOverlay">
+        <div class="loading-spinner"></div>
+        <p>Searching knowledge base...</p>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
