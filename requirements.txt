@@ -1,0 +1,22 @@
+# Zero Cost Local RAG PDF System - Dependencies
+# All packages are free, CPU-friendly, and local
+
+# Core Framework
+fastapi==0.109.0
+uvicorn[standard]==0.27.0
+python-multipart==0.0.6
+
+# PDF Processing
+pypdf==3.17.4
+
+# Embeddings & Vector Store
+sentence-transformers==2.3.1
+faiss-cpu==1.7.4
+
+# Text Processing
+langchain==0.1.5
+langchain-community==0.0.16
+
+# Utilities
+pydantic==2.5.3
+numpy==1.26.3
